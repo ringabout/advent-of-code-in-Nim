@@ -37,7 +37,7 @@ import math, strutils
 
 block:
   proc getFuel(mass: int): int =
-    int(mass / 3) - 2
+    mass div 3 - 2
 
   doAssert getFuel(12) == 2
   doAssert getFuel(14) == 2
@@ -56,7 +56,7 @@ block:
 
 block:
   proc getFuel(mass: int): int =
-    int(mass / 3) - 2
+    mass div 3 - 2
 
   proc getAllFuel(mass: int): int =
     var fuel = getFuel(mass)
